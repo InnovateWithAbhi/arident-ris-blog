@@ -1,1 +1,131 @@
-<p>home works!</p>
+<div class="bg-gray-50">
+  <!-- Hero Section -->
+  <section
+    class="relative bg-cover bg-center min-h-screen flex items-center justify-center"
+    [ngStyle]="{ 'background-image': 'url(assets/hero-background.jpeg)' }"
+  >
+    <!-- Blur Effect -->
+    <div class="absolute inset-0 bg-black bg-opacity-40 backdrop-blur-md"></div>
+
+    <div class="relative text-center px-4 sm:px-6 lg:px-8">
+      <h1
+        class="text-4xl sm:text-5xl md:text-6xl font-semibold text-gray-300 leading-tight"
+      >
+        Welcome to ArdentRIS
+      </h1>
+      <p class="mt-6 text-lg sm:text-xl text-gray-200 max-w-xl mx-auto">
+        Innovating solutions for a better tomorrow.
+      </p>
+      <div class="mt-8">
+        <a
+          href="#services"
+          class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 transition-transform transform hover:scale-105"
+        >
+          Learn More
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section
+    id="services"
+    class="min-h-screen flex items-center justify-center bg-gray-100"
+  >
+    <div class="text-center px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">
+        Our Services
+      </h2>
+      <div
+        class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-8"
+      >
+        <div
+          class="bg-white p-6 sm:p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
+        >
+          <div
+            class="h-32 sm:h-40 bg-cover bg-center rounded-t-lg"
+            [ngStyle]="{ 'background-image': 'url(assets/ai-ml.jpeg)' }"
+          ></div>
+          <h3 class="mt-6 text-lg sm:text-xl font-bold text-gray-900">
+            AI & ML Services
+          </h3>
+          <p class="mt-4 text-sm sm:text-base text-gray-600">
+            Leveraging AI for business growth and innovation.
+          </p>
+        </div>
+        <div
+          class="bg-white p-6 sm:p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
+        >
+          <div
+            class="h-32 sm:h-40 bg-cover bg-center rounded-t-lg"
+            [ngStyle]="{ 'background-image': 'url(assets/web.jpeg)' }"
+          ></div>
+          <h3 class="mt-6 text-lg sm:text-xl font-bold text-gray-900">
+            Web Development
+          </h3>
+          <p class="mt-4 text-sm sm:text-base text-gray-600">
+            Building responsive and modern websites that deliver exceptional
+            user experiences.
+          </p>
+        </div>
+        <div
+          class="bg-white p-6 sm:p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
+        >
+          <div
+            class="h-32 sm:h-40 bg-cover bg-center rounded-t-lg"
+            [ngStyle]="{ 'background-image': 'url(assets/cloud.jpeg)' }"
+          ></div>
+          <h3 class="mt-6 text-lg sm:text-xl font-bold text-gray-900">
+            Cloud Solutions
+          </h3>
+          <p class="mt-4 text-sm sm:text-base text-gray-600">
+            Secure and scalable cloud infrastructures for your business.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="min-h-screen flex items-center justify-center bg-gray-50">
+    <div class="text-center px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">
+        What Our Clients Say
+      </h2>
+      <div
+        class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-8"
+      >
+        <div
+          class="bg-white p-6 sm:p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
+        >
+          <p class="text-sm sm:text-base text-gray-600">
+            "ArdentRIS transformed our digital presence!"
+          </p>
+          <p class="mt-6 font-bold text-indigo-700">
+            — Jane Doe, CEO of Company A
+          </p>
+        </div>
+        <div
+          class="bg-white p-6 sm:p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
+        >
+          <p class="text-sm sm:text-base text-gray-600">
+            "Their cloud solutions have streamlined our operations."
+          </p>
+          <p class="mt-6 font-bold text-indigo-700">
+            — John Smith, CTO of Company B
+          </p>
+        </div>
+        <div
+          class="bg-white p-6 sm:p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
+        >
+          <p class="text-sm sm:text-base text-gray-600">
+            "Incredible service and support throughout our project."
+          </p>
+          <p class="mt-6 font-bold text-indigo-700">
+            — Alice Johnson, Manager at Company C
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
