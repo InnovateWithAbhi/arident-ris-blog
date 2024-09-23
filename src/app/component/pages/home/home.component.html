@@ -1,7 +1,7 @@
 <div class="bg-gray-50">
   <!-- Hero Section -->
   <section
-    class="relative bg-cover bg-center h-screen flex items-center justify-center"
+    class="relative bg-cover bg-center min-h-screen flex items-center justify-center"
     [ngStyle]="{ 'background-image': 'url(assets/hero-background.jpeg)' }"
   >
     <!-- Blur Effect -->
@@ -9,11 +9,11 @@
 
     <div class="relative text-center px-4 sm:px-6 lg:px-8">
       <h1
-        class="text-5xl sm:text-6xl font-semibold text-gray-300 leading-tight"
+        class="text-4xl sm:text-5xl md:text-6xl font-semibold text-gray-300 leading-tight"
       >
         Welcome to ArdentRIS
       </h1>
-      <p class="mt-6 text-xl text-gray-200 max-w-xl mx-auto">
+      <p class="mt-6 text-lg sm:text-xl text-gray-200 max-w-xl mx-auto">
         Innovating solutions for a better tomorrow.
       </p>
       <div class="mt-8">
@@ -30,53 +30,55 @@
   <!-- Services Section -->
   <section
     id="services"
-    class="h-screen flex items-center justify-center bg-gray-100"
+    class="min-h-screen flex items-center justify-center bg-gray-100"
   >
     <div class="text-center px-4 sm:px-6 lg:px-8">
-      <h2 class="text-4xl font-extrabold text-gray-900">Our Services</h2>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">
+        Our Services
+      </h2>
       <div
-        class="mt-12 grid grid-cols-1 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 gap-x-8"
+        class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-8"
       >
         <div
-          class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
+          class="bg-white p-6 sm:p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
         >
           <div
-            class="h-40 bg-cover bg-center rounded-t-lg"
-            [ngStyle]="{
-              'background-image': 'url(assets/ai-ml.jpeg)'
-            }"
+            class="h-32 sm:h-40 bg-cover bg-center rounded-t-lg"
+            [ngStyle]="{ 'background-image': 'url(assets/ai-ml.jpeg)' }"
           ></div>
-          <h3 class="mt-6 text-xl font-bold text-gray-900">AI & ML Services</h3>
-          <p class="mt-4 text-gray-600">
+          <h3 class="mt-6 text-lg sm:text-xl font-bold text-gray-900">
+            AI & ML Services
+          </h3>
+          <p class="mt-4 text-sm sm:text-base text-gray-600">
             Leveraging AI for business growth and innovation.
           </p>
         </div>
         <div
-          class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
+          class="bg-white p-6 sm:p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
         >
           <div
-            class="h-40 bg-cover bg-center rounded-t-lg"
-            [ngStyle]="{
-              'background-image': 'url(assets/web.jpeg)'
-            }"
+            class="h-32 sm:h-40 bg-cover bg-center rounded-t-lg"
+            [ngStyle]="{ 'background-image': 'url(assets/web.jpeg)' }"
           ></div>
-          <h3 class="mt-6 text-xl font-bold text-gray-900">Web Development</h3>
-          <p class="mt-4 text-gray-600">
+          <h3 class="mt-6 text-lg sm:text-xl font-bold text-gray-900">
+            Web Development
+          </h3>
+          <p class="mt-4 text-sm sm:text-base text-gray-600">
             Building responsive and modern websites that deliver exceptional
             user experiences.
           </p>
         </div>
         <div
-          class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
+          class="bg-white p-6 sm:p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
         >
           <div
-            class="h-40 bg-cover bg-center rounded-t-lg"
-            [ngStyle]="{
-              'background-image': 'url(assets/cloud.jpeg)'
-            }"
+            class="h-32 sm:h-40 bg-cover bg-center rounded-t-lg"
+            [ngStyle]="{ 'background-image': 'url(assets/cloud.jpeg)' }"
           ></div>
-          <h3 class="mt-6 text-xl font-bold text-gray-900">Cloud Solutions</h3>
-          <p class="mt-4 text-gray-600">
+          <h3 class="mt-6 text-lg sm:text-xl font-bold text-gray-900">
+            Cloud Solutions
+          </h3>
+          <p class="mt-4 text-sm sm:text-base text-gray-600">
             Secure and scalable cloud infrastructures for your business.
           </p>
         </div>
@@ -85,18 +87,18 @@
   </section>
 
   <!-- Testimonials Section -->
-  <section class="h-screen flex items-center justify-center bg-gray-50">
+  <section class="min-h-screen flex items-center justify-center bg-gray-50">
     <div class="text-center px-4 sm:px-6 lg:px-8">
-      <h2 class="text-4xl font-extrabold text-gray-900">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">
         What Our Clients Say
       </h2>
       <div
-        class="mt-12 grid grid-cols-1 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 gap-x-8"
+        class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-8"
       >
         <div
-          class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
+          class="bg-white p-6 sm:p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
         >
-          <p class="text-gray-600">
+          <p class="text-sm sm:text-base text-gray-600">
             "ArdentRIS transformed our digital presence!"
           </p>
           <p class="mt-6 font-bold text-indigo-700">
@@ -104,9 +106,9 @@
           </p>
         </div>
         <div
-          class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
+          class="bg-white p-6 sm:p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
         >
-          <p class="text-gray-600">
+          <p class="text-sm sm:text-base text-gray-600">
             "Their cloud solutions have streamlined our operations."
           </p>
           <p class="mt-6 font-bold text-indigo-700">
@@ -114,9 +116,9 @@
           </p>
         </div>
         <div
-          class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
+          class="bg-white p-6 sm:p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
         >
-          <p class="text-gray-600">
+          <p class="text-sm sm:text-base text-gray-600">
             "Incredible service and support throughout our project."
           </p>
           <p class="mt-6 font-bold text-indigo-700">
