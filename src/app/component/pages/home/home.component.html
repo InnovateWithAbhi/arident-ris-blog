@@ -4,26 +4,41 @@
     class="relative bg-cover bg-center min-h-screen flex items-center justify-center"
     [ngStyle]="{ 'background-image': 'url(assets/hero-background.jpeg)' }"
   >
-    <!-- Blur Effect -->
     <div class="absolute inset-0 bg-black bg-opacity-40 backdrop-blur-md"></div>
-
     <div class="relative text-center px-4 sm:px-6 lg:px-8">
       <h1
-        class="text-4xl sm:text-5xl md:text-6xl font-semibold text-gray-300 leading-tight"
+        class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-300 leading-tight"
       >
         Welcome to ArdentRIS
       </h1>
-      <p class="mt-6 text-lg sm:text-xl text-gray-200 max-w-xl mx-auto">
+      <p class="mt-4 sm:mt-6 text-lg sm:text-xl text-gray-200 max-w-xl mx-auto">
         Innovating solutions for a better tomorrow.
       </p>
-      <div class="mt-8">
+      <div class="mt-6">
         <a
           href="#services"
-          class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 transition-transform transform hover:scale-105"
+          class="inline-block bg-indigo-700 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-offset-2 transition-transform transform hover:scale-105"
         >
           Learn More
         </a>
       </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section
+    id="about"
+    class="min-h-screen flex items-center justify-center bg-gray-100"
+  >
+    <div class="text-center px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">
+        About ArdentRIS
+      </h2>
+      <p class="mt-4 sm:mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
+        We are a leading IT services company specializing in Artificial
+        Intelligence, Machine Learning, and Robotics. Our mission is to deliver
+        cutting-edge solutions that drive innovation and empower businesses.
+      </p>
     </div>
   </section>
 
@@ -33,52 +48,50 @@
     class="min-h-screen flex items-center justify-center bg-gray-100"
   >
     <div class="text-center px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">
-        Our Services
-      </h2>
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">Our Services</h2>
       <div
         class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-8"
       >
         <div
-          class="bg-white p-6 sm:p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
+          class="bg-white p-4 sm:p-6 lg:p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
         >
           <div
-            class="h-32 sm:h-40 bg-cover bg-center rounded-t-lg"
+            class="h-24 sm:h-32 lg:h-40 bg-cover bg-center rounded-t-lg"
             [ngStyle]="{ 'background-image': 'url(assets/ai-ml.jpeg)' }"
           ></div>
-          <h3 class="mt-6 text-lg sm:text-xl font-bold text-gray-900">
+          <h3 class="mt-4 text-lg sm:text-xl font-bold text-gray-900">
             AI & ML Services
           </h3>
-          <p class="mt-4 text-sm sm:text-base text-gray-600">
+          <p class="mt-2 text-sm sm:text-base text-gray-600">
             Leveraging AI for business growth and innovation.
           </p>
         </div>
         <div
-          class="bg-white p-6 sm:p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
+          class="bg-white p-4 sm:p-6 lg:p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
         >
           <div
-            class="h-32 sm:h-40 bg-cover bg-center rounded-t-lg"
+            class="h-24 sm:h-32 lg:h-40 bg-cover bg-center rounded-t-lg"
             [ngStyle]="{ 'background-image': 'url(assets/web.jpeg)' }"
           ></div>
-          <h3 class="mt-6 text-lg sm:text-xl font-bold text-gray-900">
+          <h3 class="mt-4 text-lg sm:text-xl font-bold text-gray-900">
             Web Development
           </h3>
-          <p class="mt-4 text-sm sm:text-base text-gray-600">
+          <p class="mt-2 text-sm sm:text-base text-gray-600">
             Building responsive and modern websites that deliver exceptional
             user experiences.
           </p>
         </div>
         <div
-          class="bg-white p-6 sm:p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
+          class="bg-white p-4 sm:p-6 lg:p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
         >
           <div
-            class="h-32 sm:h-40 bg-cover bg-center rounded-t-lg"
+            class="h-24 sm:h-32 lg:h-40 bg-cover bg-center rounded-t-lg"
             [ngStyle]="{ 'background-image': 'url(assets/cloud.jpeg)' }"
           ></div>
-          <h3 class="mt-6 text-lg sm:text-xl font-bold text-gray-900">
+          <h3 class="mt-4 text-lg sm:text-xl font-bold text-gray-900">
             Cloud Solutions
           </h3>
-          <p class="mt-4 text-sm sm:text-base text-gray-600">
+          <p class="mt-2 text-sm sm:text-base text-gray-600">
             Secure and scalable cloud infrastructures for your business.
           </p>
         </div>
@@ -86,45 +99,119 @@
     </div>
   </section>
 
+  <!-- Technologies Section with Slide Animation -->
+  <section class="min-h-screen flex items-center justify-center bg-white">
+    <div class="text-center px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">
+        Technologies We Use
+      </h2>
+      <div
+        class="mt-10 flex flex-wrap justify-center space-x-8 space-y-4 overflow-hidden"
+      >
+        <img
+          src="assets/python.svg"
+          alt="Python"
+          class="h-16 w-auto mt-4 animate-slide-in-left"
+        />
+        <img
+          src="assets/csharp.svg"
+          alt="C Sharp"
+          class="h-16 w-auto animate-slide-in-left delay-150"
+        />
+        <img
+          src="assets/net-core.svg"
+          alt=".NET Core"
+          class="h-16 w-auto animate-slide-in-left delay-300"
+        />
+        <img
+          src="assets/angular.svg"
+          alt="Angular"
+          class="h-16 w-auto animate-slide-in-left delay-450"
+        />
+        <img
+          src="assets/react.svg"
+          alt="React"
+          class="h-16 w-auto animate-slide-in-right delay-600"
+        />
+        <img
+          src="assets/azure.svg"
+          alt="Azure"
+          class="h-16 w-auto animate-slide-in-right delay-750"
+        />
+        <img
+          src="assets/aws.svg"
+          alt="AWS"
+          class="h-16 w-auto animate-slide-in-right delay-900"
+        />
+        <img
+          src="assets/google-cloud.svg"
+          alt="Google Cloud"
+          class="h-16 w-auto animate-slide-in-right delay-1050"
+        />
+      </div>
+    </div>
+  </section>
+
   <!-- Testimonials Section -->
   <section class="min-h-screen flex items-center justify-center bg-gray-50">
     <div class="text-center px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">
         What Our Clients Say
       </h2>
       <div
         class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-8"
       >
         <div
-          class="bg-white p-6 sm:p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
+          class="bg-white p-4 sm:p-6 lg:p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
         >
           <p class="text-sm sm:text-base text-gray-600">
             "ArdentRIS transformed our digital presence!"
           </p>
-          <p class="mt-6 font-bold text-indigo-700">
+          <p class="mt-4 font-bold text-indigo-700">
             — Jane Doe, CEO of Company A
           </p>
         </div>
         <div
-          class="bg-white p-6 sm:p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
+          class="bg-white p-4 sm:p-6 lg:p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
         >
           <p class="text-sm sm:text-base text-gray-600">
             "Their cloud solutions have streamlined our operations."
           </p>
-          <p class="mt-6 font-bold text-indigo-700">
+          <p class="mt-4 font-bold text-indigo-700">
             — John Smith, CTO of Company B
           </p>
         </div>
         <div
-          class="bg-white p-6 sm:p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
+          class="bg-white p-4 sm:p-6 lg:p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105"
         >
           <p class="text-sm sm:text-base text-gray-600">
             "Incredible service and support throughout our project."
           </p>
-          <p class="mt-6 font-bold text-indigo-700">
+          <p class="mt-4 font-bold text-indigo-700">
             — Alice Johnson, Manager at Company C
           </p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="min-h-screen flex items-center justify-center bg-indigo-700">
+    <div class="text-center px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl sm:text-4xl font-bold text-white">
+        Ready to Innovate with Us?
+      </h2>
+      <p class="mt-4 sm:mt-6 text-lg text-gray-100 max-w-2xl mx-auto">
+        Get in touch with us for a free consultation and see how we can
+        transform your business.
+      </p>
+      <div class="mt-6">
+        <a
+          href="#contact"
+          class="inline-block bg-white text-indigo-700 px-6 py-3 rounded-lg shadow-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 transition-transform transform hover:scale-105"
+        >
+          Contact Us
+        </a>
       </div>
     </div>
   </section>

@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [NgStyle],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css',
+  styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {}
