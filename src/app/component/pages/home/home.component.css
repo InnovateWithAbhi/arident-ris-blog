@@ -20,11 +20,10 @@
   }
 }
 
-@layer utilities {
-  .animate-slide-in-left {
-    animation: slideInLeft 0.7s ease-out forwards;
-  }
-  .animate-slide-in-right {
-    animation: slideInRight 0.7s ease-out forwards;
-  }
+.animate-slide-in-left {
+  animation: slideInLeft 5s ease-out forwards infinite;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 5s ease-out forwards infinite;
 }
